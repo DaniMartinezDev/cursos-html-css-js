@@ -2,7 +2,6 @@
 /*Merriweather; Montserrat*/
 
 /*Merriweather*/
-
 @font-face {
 	font-family: Merriweather;
   src: url("../fonts/Merriweather/Merriweather-Black.ttf") format("truetype");
@@ -53,6 +52,7 @@
 	src: url("../fonts/Merriweather/Merriweather-Italic.ttf") format("truetype");
 	font-style: italic;
 }
+
 
 
 /*Montserrat*/
