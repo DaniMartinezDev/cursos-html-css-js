@@ -1,0 +1,271 @@
+<!-- UNIFICACIÓN DE LOS CURSOS HECHOS HASTA EL MOMENTO --- RECORTAR LAS PARTES PERTINENTES-->
+
+<!-- CURSO MOZILLA -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Empezamos con el CSS</title>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#150749">	
+    <link rel="stylesheet" href="styles.css">
+  
+    <!-- POSIBLES UBICACIONES
+    Dentro de un subdirectorio llamado styles dentro del directorio de trabajo -->
+    <!-- <link rel="stylesheet" href="styles/style.css" /> -->
+    <!-- Dentro de un subdirectorio llamado general, que está en un subdirectorio llamado styles, dentro del directorio de trabajo -->
+    <!-- <link rel="stylesheet" href="styles/general/style.css" /> -->
+    <!-- Sube un nivel de directorio, y luego dentro de un subdirectorio llamado styles -->
+    <!-- <link rel="stylesheet" href="../styles/style.css" /> -->
+  </head>
+
+  <body>
+    <h1>Soy un título de nivel uno</h1>
+
+    <p>
+      Este es un párrafo de texto. En el texto hay un
+      <span class="special">elemento span</span> y también un
+      <a href="http://example.com">enlace</a>.
+    </p>
+
+    <p>Este es el segundo párrafo. Contiene un elemento <em>destacado</em>.</p>
+
+    <ul>
+      <li>Punto uno</li>
+      <li class="special">Punto dos</li>
+      <li>Punto <em>tres</em></li>
+    </ul>
+
+    <div class="outer">
+      <div class="box">La caja interior es del 90% - 30px.</div>
+    </div>
+  </body>
+</html>
+
+
+
+<!-- CURSO FREE CODE CAMP-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Inicio | Tutorial freeCodeCamp</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles unificado.css">
+  </head>
+  <body>
+    <h2>App de gatos</h2>
+    <main> <!--Representa el area principal del documento, debe ser unico, no repetirse ni descender de otro elemento-->
+      <h3>Imagenes de gatos</h3>
+      <p>Haz click aquí para ver <a href="https://es.wikipedia.org/wiki/Portal:Felinos/Gatos" target="_blank" rel="noopener noreferrer">fotos de gatos de Wikipedia</a></p> <!--Atributo rel para evitar ataques informaticos-->
+        <!-- AQUI VAN LAS FOTOS DE LOS GATOS-->
+      
+      <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/p" target="_blank" rel="nooper noreferrer"><img src="https://images.unsplash.com/photo-1591871937631-2f64059d234f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" alt="Gatito bebe con la patita levantada"> </a>
+      <img src="Gatito bebe gris.jfif" alt="Gatito atigrado" id="cat-baby-gray"> <!--Imagen en la carpeta de la pagina-->
+      <img src="/imagenes_de_gatitos/Pumita bebe.jpg" alt="Mini pumita mirando fijamente"><!--Imagen en otra carpeta, hay que usar la barra y el nombre de la carpeta-->
+      <a href="#" target="_blank" rel="noopener noreferrer"><img src="#" alt="#"></a> <!--Enlace vacio-->
+      
+      <hr> <!--Linea hoizontal, solo apertura--> 
+
+      <h3>Listas de Gatos</h3>
+
+      <p>Cosas que los gatos <em>aman</em>:</p>
+      <ul> <!--Listas NO ordenadas, tienen viñetas y no numeros-->
+        <li>Menta gatuna</li><!--Cada elemento de la lista lleva su LI-->
+        <li>Atun</li>
+        <li>Apuntadores lasers</li>
+        <li><s>Lasagna</s></li>
+      </ul>
+
+      <p>Cosas que los gatos <strong>odian</strong>:</p>
+      <ol> <!--Lista ordenada, representadas con numeros.-->
+        <li>El agua fria</li>
+        <li>Los perros</li>
+        <li>Tratamientos antipulgas</li>
+        <li>Otros gatos</li>
+      </ol>
+
+      <img src="imagenes_de_gatitos/Pumita bebe.jpg" alt="Gatito puma">
+  </main>
+  <article>
+    <h2>Article usando formatos en textos</h2>
+    <p><strong> Texto en negrita usando STRONG</strong></p> <!--Es apra destacar algo importante-->
+    <p><em>Texto en cursiva usando EM</em></p>
+    <p><s>texto tachado usando S</s></p>
+  </article> 
+  <input>
+    <form action="/enviar-respuesta"> <!--Destino del dato ingreso por el usuario, el cual será alojado en un servidor-->
+      <input type="text" placeholder="URL de la foto de tu gato"> <!---Respuesta o valor del usuario - Tambien va el PLACEHOLDER en este lugar (marcador)-->
+      <button type="submit">Enviar</button> <!--Crear el boton de "Enviar"-->
+    </form> <!--Crear campos obligatorios-->
+    <action="/enviar-respuesta"> 
+      <input type="text" placeholder="URL de la foto de tu gato (Obligatorio)" required> <!--El REQUIRED crea el campo obligatorio--> 
+      <button type="submit">Enviar</button> <!--Crear el boton de "Enviar"-->
+    <form action="/enviar-respuesta">
+      <label><input type="radio">Interior</label></input> <!--El LABEL hace que al tocar la palabra tambien se seleccione el boton-->
+      <input type="radio">Exterior</input>
+    </form><!-- Boton de radio o de OPCION-->
+  </article>
+  <!--DEAD LINK: Se usan para maquetar enlaces, pero sin destino, usando el numeral-->
+    <!-- <h2>Listado de webs utilizadas para el curso</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Portal de Desarrolladores Web de Mozilla (HTML)</a></li>
+      <li><a href="https://google.github.io/styleguide/htmlcssguide.html" target="_blank">Guia Google sobre HTML y CSS</li>
+    </ul> -->
+  </body>
+</html>
+
+
+
+<!-- CURSO MIDU-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Curso MiDuv de HTML</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <!-- Hay dos maneras de crear formularios: NATIVA o XXXXX (AVERIGUAR).-->
+  <h1>Formularios en HTML</h1>
+  
+      <section>
+      <h2>Formulario de contacto</h2>
+      <form method="post" action="/"><!-- ACTION es el destino de los datos ingresados-->
+          <fieldset>
+              <legend>Tu información para que nos contactemos!</legend>
+
+              <label for="name">Nombre:</label> <!-- FOR para relocalizar el curso adentro del input. El TYPE es para usar los datos precargados en el dispositivo del usuario-->
+                  <input 
+                      type="text" 
+                      name="name" 
+                      id="name" 
+                      title="Ingresa tu nombre aca"
+                      placeholder="Ana Berenice Castillo"
+                      required>
+              <div></div>
+              <label for="email">Mail:</label>
+                  <input 
+                  type="email" 
+                  name="email"
+                  id="email"
+                  title="Ingresa tu correo electronico"
+                  placeholder="ejemplo@gmail.com"
+                  required>
+          </fieldset>
+
+          <fieldset>
+              <legend>Información adicional</legend>
+
+              <label for="tel">Teléfono</label>
+                  <input 
+                  type="tel" 
+                  name="tel" 
+                  id="tel"
+                  title="Ingresa tu número de teléfono"
+                  placeholder="1144448888">
+                  <!-- required pattern="[0-9]{9}"> REQUIRED PATTERN sirve para solicitar un patron especifico de datos a ingresar-->
+          </fieldset>
+
+          <fieldset>
+              <legend>Motivo de consulta</legend>
+              <div>    
+                  <label for="why">¿En qué podemos ayudarte?</label>
+                      <select 
+                          name="why" 
+                          id="why"
+                          title="Elegí el motivo de tu consulta" 
+                          required> <!--SELECT sirve para hacer una lista con opciones a elegir por el usuario y con el OPTION se crean las opciones a elegir-->
+                          <option value="1">Crear una página web para mi emprendimiento</option>
+                          <option value="2">Dudas sobre el diseño web</option>
+                          <option value="3">Conocer otros proyectos de DM</option>
+                          <option value="4">Más información de los servicios ofrecidos</option>
+                      </select>
+              </div>
+                              
+              <div>
+                  <datalist id="place"> <!--DATALIST se usa para facilitar el autocompletado al usuario con una lista de opciones predeterminadas que se visualizan rápidamente al escribir-->
+                      <option value="Ciudad de Buenos Aires"></option>
+                      <option value="Gran Buenos Aires - Zona Norte"></option>
+                      <option value="Gran Buenos Aires - Zona Oeste"></option>
+                      <option value="Gran Buenos Aires - Zona Sur"></option>
+                      <option value="Interior de Buenos Aires"></option>
+                      <option value="Interior de Argentina"></option>
+                  </datalist>
+                  <label for="place">¿Desde donde nos contactas?</label>
+                      <input list="place" name="place" required>
+              </div>
+
+              
+              <div>
+                  <label for="terms">Acepto los terminos y condiciones</label>
+                  <input type="checkbox" id="terms" name="terms"id="terms" required> <!--LABEL para términos y condiciones de la página-->
+              </div>
+          </fieldset>
+          <button>Envía tu consulta!</button>
+      </form>
+  </section>
+  
+  <section>
+      <h2>Preguntas frecuentes</h2>
+      <details>
+          <summary>¿Cuanto tiempo demoran en responder?</summary>
+          <p>Muy poco! Nos pondremos en contacto a las pocas horas de tu solicitud.</p>
+      </details>
+      <details>
+          <summary>¿Hacen presupuestos para mi proyecto?</summary>
+          <p>Si! Te orientaremos en un plan acorde a tus necesidades y tu capacidad de pago.</p>
+      </details>
+  </section>
+
+  <!--Recursos multimedia-->
+  <section>
+      <h2>Recursos multimedias muy copados!</h2>
+      <video autoplay muted src="../../../../../MOTO G7 2024.07.02/Downloads/ssstwitter.com_1716858349788.mp4"></video> <!-- AUTOPLAY LOOP se usa para que se reproduzca el mismo video infinitamentente y el MUTED para que sea sin sonido y se reproduzca automaticamente-->
+      <br>
+      <video controls src="VID-20221209-WA0056.mp4"></video> <!-- CONTROLS permite al usuario controlar la reproducción del video-->
+      <br>
+
+      <audio controls src="I Just Died In Your Arms.mp3">Temazo: <i>I just died in your arms</i></audio>
+      <br>
+      
+      <img 
+      src="IMG-20240331-WA0001.jpg" 
+      alt="Poster deseandoté felices pascuas"
+      title="¡Felices Pascuas!"
+      loading="lazy"
+      style="width:25%;aspect-ratio: 813/846;"
+      > 
+      <!-- LOADING LAZYY sirve para cargar la imagen solamente cuando lo necesita, dependiendo la conexión del usuario, optimizando el rendimiento para una buen a carga inicial. USAR SOLO PARA IMAGENES DE ABAJO, NO LAS PRIMERAS!-->
+      <!-- STYLE "WIDTH:100%;ASPECT-RATIO:XXX/YYY;" sirve para acomodar la imagen al tamaño de la ventana. El WIDTH indica porcentaje de la imagen en la página y el ASPECT-RATIO se pone para indicar la relación de aspecto-->
+  </section>
+
+
+  <!--Cuadros de dialogos emergentes-->
+  <section>
+      <h2>Caja de Sorpresas!</h2>
+      
+      <dialog id="dialog">
+          <h3></h3>¿Sabías que puedes abrir un cuadro emergente de este modo?
+          <p>Y es totalmente nativo!</p>
+          <button id="hide">Cerrar cuadro</button>
+      </dialog>
+      
+      <button id="show">Haz click aquí para descubrir lo que tenemos para vos!</button>
+      
+      <script>
+          window.show.addEventListener('click', () => {
+              window.dialog.showModal()
+          })
+  
+          window.hide.addEventListener('click', () => {
+              window.dialog.close()
+          })
+      </script> <!-- Script de JavaScript para darle interactividad al cuadro emergente-->
+  </section>
+</body>
+</html>
+
+
+
+<!-- CURSO X-->

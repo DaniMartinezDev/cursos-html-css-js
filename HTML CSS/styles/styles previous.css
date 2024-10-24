@@ -1,0 +1,151 @@
+/* CURSO FREE CODE CAMP */
+/* * {
+    background-color: skyblue;
+}
+#cat-baby-gray {
+    width: 80%;
+    margin: 25px;
+    padding: 25px;
+    background-color: yellow;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+} */
+
+body {
+    background-color: lightgreen;
+}
+
+#contenedor-principal {
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    background-color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rectangulo {
+    padding: 5px;
+    margin: 5px;
+}
+
+.px {
+    background-color: crimson;
+    width: 200px;    
+}
+
+.vw {
+    background-color: darkmagenta;
+    width: 20vw;
+}
+
+.em {
+    background-color: green;
+    width: 15em;
+    font-size: 1.5em;
+}
+
+
+/*PRIORIDADES ENTRE MISMO NIVEL DE ELEMENTOS, CLASS o ID (Prioriza el de abajo)*/
+.text-blue {
+    color: blue;
+}
+
+.text-red {
+    color: red;
+}
+
+
+/*PRIORIDADES ENTRE DIFERENTES CLASS VS. ELEMENT (Elemento vs. Clase ==> Prioriza clase, sin importar el orden)*/
+a {
+    text-decoration: purple wavy underline; /*Aplicar color al subrayado*/
+}
+
+.sin-subrayado {
+    text-decoration: none;
+}
+
+
+/*PRIORIDADES ENTRE DIFERENTES CLASS VS. ELEMENT (Elemento vs. Clase ==> Prioriza clase, sin importar el orden)*/
+#titulo {
+    color: rgba(0, 128, 0, 0.657); /*NO SE USA ESTE METODO DE COLOR*/
+    /*Se debe usar rgb ( 0 128 0 / 65.7%)*/
+}
+
+/*STYLE DE LINEA VS STYLE DEL .CSS ==> CSS prioriza el style EN LINEA por sobre el ARCHIVO .CSS */
+
+/*ROMPER PRIORIDADES ==> Usar el atributo !important */
+
+
+/* SISTEMA DE COLOR CON CÓDIGOS HEXADECIMALES 
+Se usan 16 valores, que van del 0 (menor valor) a la F (mayor valor) ==> 0 a 9 y A a F. 
+Se usa un codigo de 6 caracteres. 
+Se divide en tres segmentos: #00 00 00 (por ejemplo), basandosé en el segmento RGB (Red Green Blue). 
+Agregando dos caracteres (DE 00 a FF) se gradua la opacidad. 
+*/
+
+/* SISTEMA DE COLOR "RGB"
+Se utiliza un codigo rgb (0 0 0 / 50%) donde cada valor va del 0 al 255, con 0 más bajo. 
+Se pone una barra y el % de opacidad. 
+NO USAR MÁS EL RGBA (Método "Legacy")
+
+
+
+/* CURSO MIDU */
+h1 {
+    color: #6333e6; /*Fallback de color, por si el nav no lee OKLCH*/
+    color: oklch(50.3% 0.2465 285.76);/*Con COLOR se "contagian" los demás elementos del selector*/
+    border: 2px solid #035; /*Atajo de linea para definir propiedades del borde, en lugar de usar tres propiedades como width - style - color*/
+    text-align: center;
+}
+
+h2{
+    color: #09f;
+    color: oklch(66.9% 0.18358989163257364 248.8066094258165);
+}
+
+a:hover{
+    outline: 5px solid blue;
+    outline: 5px solid oklch(45.2% 0.31313625765874376 264.05300810418345);
+}
+
+body {
+    background: burlywood;
+    margin: 0;
+}
+
+.container{
+    width: 250px;
+    height: 250px;
+    background: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: #000;
+    overflow: auto;
+}
+
+
+/* MODELO DE LA CAJA
+    En linea: No crea saltos de linea. No cambia el width o el heidth. 
+    En bloque: Crea saltos de linea. Cambia el width o el height. 
+        FLEX BOX o GRID BOX => Son tipos especiales de cajas, en donde impactan de manera distinta los elementos que descienden de ellas. 
+
+CUATRO VARIABLES CLAVES PARA CALCULAR LA CAJA (BOX):
+    CONTENT + PADDING + BORDER ==> TAMAÑO DE LA CAJA
+        CONTENT: Contenido en sí mismo
+        PADDING: Rodea al content
+        BORDER: Rodea al content y al padding
+    MARGIN: Rodea a estos tres, y es la separación con otros elementos. NO FORMA PARTE DEL TAMAÑO DE LA CAJA. 
+
+    SOLUCIÓN: Uso del "BOX-SIZING". El CONTENT-BOX es el valor por defecto, que no tiene en cuenta al padding y al border para el calculo de la propiedad weith/height. 
+    En cambio, el BORDER-BOX, toma el valor de los tres atributos, y achica o aumenta el CONTENT para adecuar el tamaño de weith/height indicado. 
+
+
+OVERFLOW / DESBORDAMIENTO: 
+Pasa cuando el contenido desborda a una caja, ya que está tiene un tamaño fijo (en px por ejemplo), y el contenido es más grande. 
+SOLUCIÓN: Cambiar el overflow por defecto (visible) por AUTO o SCROLL.
+    OVERFLOW:auto*/ 
+
+
+/* POSITION / POSICIONAMIENTO:
