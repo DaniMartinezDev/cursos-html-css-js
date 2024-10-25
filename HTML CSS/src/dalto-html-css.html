@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Dalto de HTML y CSS</title>
+    <link href="styles/styles-cursos.css" rel="stylesheet" type="text/css">
+    <link href="styles/fonts.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Curso de HTML y CSS de Dalto</h1>
+
+    <h2>Capitulo 1: Introducción - Entendiendo la web, HTML y CSS</h2>
+    <h3>Entendiendo la web</h3>
+    <h4>Concepto de webs, servidores y URL/Enlace</h4>
+    <p>URLs/Enlaces: La web es como un hotel, en donde en cada habitación hay un contenido distinto. El enlace es el número de la habitación, o sea, la URL. Esa URL/Enlace se aloja en un servidor para que este disponible en internet.</p>
+    <h4>Rol de los navegadores</h4>
+    <p>Navegadores: Es el vehiculo entre clientes y servidores. La PC local manda una peticion, y el servidor responde enviando archivos en respuesta a esa petición (principio "solicitud-respuesta"). Ademas, los navegadores reciben y leen el codigo HTML/CSS (y demás) y lo hacen accesible al usuario.</p>
+        
+    <h3>Entendiendo HTML y CSS</h3>
+    <h4>¿Que es HTML?</h4>
+    <p>Lenguaje de marcado: Agarra texto y lo presenta de una manera diferente. Existe HTML y Markdome (es más ligero y fácil que HTML), y se usa para hacer documentación (README.md por ejemplo). Esto significa que es un lenguaje interpretado (ejecuta el código en tiempo real)</p>
+    <p>Con HTML se arma la "ESTRUCTURA" de una página web. Cada componente de HTML son elementos (texto, imagenes, videos, forms, etc)</p>
+    <p>Cada elemento se engloba en ETIQUETAS, las cuales tienen etiquetas de apertura y cierre.</p>
+    <p>Otros temas a ver: atributos, etiquetas autocerrables, tipos de etiquetas, SEO.</p>
+    <h4>¿Qué es CSS?</h4>
+    <p>Las propiedades de un elemento, son declaradas, por defecto, por el navegador.</p>
+    <p>Para asignar propiedades, se inventó CSS, que es como una guía universal o standard para distintos navegadores.</p>
+    <p>CSS permite asignarle propiedades a los elementos HTML y decirle al navegador como queremos que sean mostrados los elementos.</p>
+    <p>CSS funciona mediante reglas de estilo. Estas reglas contienen selectores, bloques de declaraciones, que contienen propiedades y valores.</p>
+    <p>Tema a ver: Modos de selección de elementos, y todas las propiedades que se pueden asignar. Responsive design (adaptar la web a la pantalla).</p>
+    
+    
+    
+    <h2>Capitulo 2: HTML BÁSICO</h2>
+    <h3>Estructura de una etiqueta</h3>
+    <h4>Etiqueta de apertura + Contenido + Etiqueta de cierre</h4>
+    <p>Todas las etiquetas tienen una función, a nivel semantico, por eso, algunas quedan obsoletas. Por ejemplo, no se recomiendan usar las etiquetas que dan "estilo" a los elementos, ya que eso se hace en CSS.</p>
+    <p>Se deben cumplir las reglas semanticas, para mejorar el SEO en los navegadores. La semantica ayuda a trabajar mejor y que cada etiqueta cumpla un rol correcto.</p>
+    <p>Las etiquetas son como bloques.</p>
+    
+    
+    <h3>Estructura de una página web</h3>
+    <p>Escribir <code>html:5</code> para que VSC escriba la estructura básica de la página.</p>
+    <p><code>html</code> ==> Estructura general de la página</p>
+    <p><code>head</code> ==> Información y metadatos no visibles de la página. Asigna title, relaciona con otros archivos, etiquetas "meta" etc.</p>
+    <p><code>body</code> ==> Parte visible de la página.</p>
+    
+
+    <h3>Párrafos y encabezados</h3>
+    <h4>Parrafos (paragraph) ==> P</h4>
+    <p>Describen parrafos con contenido (texto por lo general). </p>
+    <p>Siempre deben tener una idea y un concepto en especifico.</p>
+    <h4>Encabezados (headings) ==> H1 - H6</h4>
+    <p>Encabezan las partes de la página web. El <code>h1</code> se utiliza una sola vez por página para titular el contenido de ella. El <code>h2</code> se utiliza para encabezar partes o secciones generales, y podemos seguir así hasta el <code>h6</code>.</p>
+    
+
+    <h3>Listas ==> OL/UL + LI</h3>
+    <h4>Definición de listas</h4>
+    <p>Estan las ordenadas (orderer) y las desordenadas (unorderer). Sirven para organizar contenido o para las barras de navegación.</p>
+    <P>Al interior de los <code>ol</code> y <code>ul</code> se encuentran las <code>li</code>, que serían los elementos individuales de esas listas.</P>
+    <h4>Listas ordenadas (orderer) ==> OL</h4>
+    <p>Se enlistan con numeros o letras de forma ordenada. Es para contenido que necesita jerarquia u orden de pasos por ejemplo.</p>
+    <p></p>
+    <h4>Listas desordenadas (unorderer) ==> UL</h4>
+    <p>No importa el orden del contenido. Se suele usar para barras de navegacion</p>
+    <p></p>
+    
+
+    <h3>Enlaces o hipervinculos(básico) ==> A</h3>
+    <h4>Diferencia entre pagina web y sitio web</h4>
+    <p>La pagina web es la codificacion individual, pero un sitio web, es un conjunto de paginas webs que conforman un proyecto, por ejemplo, una tienda online con elementos individuales que se generan en páginas webs individuales. </p>
+    <h4>Estructura del enlace</h4>
+    <p>La etiqueta a usar es <code>a</code>, y se debe usar un atributo, llamado <code>href=""</code>. Dentro de este atributo, va la ruta del directorio local, del servidor, o una ruta externa. Se recomienda usar el "https" y no solo el "http".</p>
+    <p>Atributo <code>target</code>: Se usa para elegir la acción que realizará el usuario: si se usa <code>_blank</code> se abre en una nueva pestaña, y si se deja el que trae por defecto (<code>_self</code>), el enlace se abre en la misma pestaña.</p>
+    <p>Atributo <code>title</code>: Se usa para poner un titulo visible cuando el usuario pone el mouse sobre el elemento. Este atributo se puede usar en otros elementos tambien, sobre todo en imagenes y formularios.</p>
+    <p>Entre las etiquetas, se debe escribir el texto o boton que se le mostrará al usuario.</p>
+    
+
+    <h3>Imágenes ==> IMG </h3>
+        <p>La etiqueta <code>img</code> no lleva etiqueta de cierre (self closing tag), el elemento se carga a través del atributo <code>SRC=""</code>.</p>
+    <p>Atributo <code>alt</code> ==> Permite escribir un texto "alternativo" que aparecerá si la imagen no se carga correctamente.</p>
+    
+    
+    <h3>Rutas</h3>
+    <h4>Definiciones</h4>
+    <p>Se trata de estrategias de trabajo a la hora de confeccionar proyectos a través de diferentes directorios.</p>
+    <p>Las rutas refieren especificamente a como acceder a un directorio desde una posición (por ejemplo, desde un index). El mecanismo de acceso consiste en usar la barra <code>/</code> para ir a un directorio "posterior" y el comando <code>../</code> para un directorio "anterior". Estos comandos se pueden ir acumulando para entrar a un directorio dentro de otro.</p>
+    <p>En VSC, se puede poner la ruta arrastrando el directorio a un lugar del código. Tener cuidado si se cambia el nombre de las rutas relativas.</p>
+    <h4>Tipos de rutas</h4>
+    <p>Rutas Absolutas: son las que rutas que no importan desde donde se acceda, siempre nos dirige a un mismo lugar. EL mejor ejemplo son las URL</p>
+    <p>Rutas Relativas: Dependen del lugar de "inicio" del enlace, por lo que depende de como se escriba la ruta con / y ../, la "llamada" será la clave.</p>
+
+
+    <h3>Formularios</h3>
+    <h4>Definiciones</h4>
+    <p>Forma de pedirle datos al usuario (nombre, apellido, mail, opiniones, confirmaciones, etc).</p>
+    <p></p>
+    <p></p>
+
+
+    
+    <h2>Capitulo 3: CSS BÁSICO</h2>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    
+    
+
+    <h2>Capitulo 4: HTML AVANZADO</h2>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+
+
+
+    <h2>Capitulo 5: CSS INTERMEDIO</h2>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    
+
+    
+    <h2>Capitulo 6: CSS FLEXBOX</h2>
+    <h3>...</h3>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    
+
+    
+    <h2>Capitulo 7: RESPONSIVE DESIGN</h2>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    
+
+    
+    <h2>Capitulo 8: CSS GRID</h2>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+
+
+
+    <h2>Capitulo 9: ANIMACIONES</h2>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+
+
+
+    <h2>Capitulo 10: WEB HOSTING</h2>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+
+
+
+    <h2>Capitulo 11: SECCIÓN AVANZADA</h2>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+
+
+
+    <h2>Capitulo 12: PROYECTOS FINALES</h2>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+
+
+
+    <h2>Capitulo 13: COMO SEGUIR APRENDIENDO</h2>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <h3>...</h3>
+    <h4></h4>
+    <p></p>
+    <p></p>
+    <p></p>

@@ -1,5 +1,6 @@
 /* CURSO FREE CODE CAMP */
-/* * {
+
+/* {
     background-color: skyblue;
 }
 #cat-baby-gray {
@@ -13,7 +14,9 @@
 } */
 
 body {
+    background: burlywood;
     background-color: lightgreen;
+    margin: 0;
 }
 
 #contenedor-principal {
@@ -46,7 +49,7 @@ body {
 }
 
 
-/*PRIORIDADES ENTRE MISMO NIVEL DE ELEMENTOS, CLASS o ID (Prioriza el de abajo)*/
+/* PRIORIDADES ENTRE MISMO NIVEL DE ELEMENTOS, CLASS o ID (Prioriza el de abajo) */
 .text-blue {
     color: blue;
 }
@@ -56,9 +59,9 @@ body {
 }
 
 
-/*PRIORIDADES ENTRE DIFERENTES CLASS VS. ELEMENT (Elemento vs. Clase ==> Prioriza clase, sin importar el orden)*/
+/* PRIORIDADES ENTRE DIFERENTES CLASS VS. ELEMENT (Elemento vs. Clase ==> Prioriza clase, sin importar el orden) */
 a {
-    text-decoration: purple wavy underline; /*Aplicar color al subrayado*/
+    text-decoration: purple wavy underline; /* Aplicar color al subrayado */
 }
 
 .sin-subrayado {
@@ -66,15 +69,16 @@ a {
 }
 
 
-/*PRIORIDADES ENTRE DIFERENTES CLASS VS. ELEMENT (Elemento vs. Clase ==> Prioriza clase, sin importar el orden)*/
+/* PRIORIDADES ENTRE DIFERENTES CLASS VS. ELEMENT (Elemento vs. Clase ==> Prioriza clase, sin importar el orden) */
 #titulo {
-    color: rgba(0, 128, 0, 0.657); /*NO SE USA ESTE METODO DE COLOR*/
-    /*Se debe usar rgb ( 0 128 0 / 65.7%)*/
+    color: rgb(0 128 0 / 65.7%); /* NO SE USA ESTE METODO DE COLOR */
+
+    /* Se debe usar rgb ( 0 128 0 / 65.7%) */
 }
 
-/*STYLE DE LINEA VS STYLE DEL .CSS ==> CSS prioriza el style EN LINEA por sobre el ARCHIVO .CSS */
+/* STYLE DE LINEA VS STYLE DEL .CSS ==> CSS prioriza el style EN LINEA por sobre el ARCHIVO .CSS */
 
-/*ROMPER PRIORIDADES ==> Usar el atributo !important */
+/* ROMPER PRIORIDADES ==> Usar el atributo !important */
 
 
 /* SISTEMA DE COLOR CON CÓDIGOS HEXADECIMALES 
@@ -93,25 +97,20 @@ NO USAR MÁS EL RGBA (Método "Legacy")
 
 /* CURSO MIDU */
 h1 {
-    color: #6333e6; /*Fallback de color, por si el nav no lee OKLCH*/
-    color: oklch(50.3% 0.2465 285.76);/*Con COLOR se "contagian" los demás elementos del selector*/
-    border: 2px solid #035; /*Atajo de linea para definir propiedades del borde, en lugar de usar tres propiedades como width - style - color*/
+    color: #6333e6; /* Fallback de color, por si el nav no lee OKLCH */
+    color: oklch(50.3% 0.2465 285.76deg);/* Con COLOR se "contagian" los demás elementos del selector */
+    border: 2px solid #035; /* Atajo de linea para definir propiedades del borde, en lugar de usar tres propiedades como width - style - color */
     text-align: center;
 }
 
 h2{
     color: #09f;
-    color: oklch(66.9% 0.18358989163257364 248.8066094258165);
+    color: oklch(66.9% 0.1836 248.8066deg);
 }
 
 a:hover{
     outline: 5px solid blue;
-    outline: 5px solid oklch(45.2% 0.31313625765874376 264.05300810418345);
-}
-
-body {
-    background: burlywood;
-    margin: 0;
+    outline: 5px solid oklch(45.2% 0.3131 264.0530deg);
 }
 
 .container{
@@ -145,7 +144,7 @@ CUATRO VARIABLES CLAVES PARA CALCULAR LA CAJA (BOX):
 OVERFLOW / DESBORDAMIENTO: 
 Pasa cuando el contenido desborda a una caja, ya que está tiene un tamaño fijo (en px por ejemplo), y el contenido es más grande. 
 SOLUCIÓN: Cambiar el overflow por defecto (visible) por AUTO o SCROLL.
-    OVERFLOW:auto*/ 
+    OVERFLOW:auto */ 
 
 
-/* POSITION / POSICIONAMIENTO:
+/* POSITION / POSICIONAMIENTO: */
