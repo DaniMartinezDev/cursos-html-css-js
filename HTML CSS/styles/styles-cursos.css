@@ -53,10 +53,11 @@ a {
 }
 
 code {
-  font-family: Montserrat,sans-serif;
+  padding: 2.5px;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   background-color: #495581;
-  border-radius: 5%;
+  border-radius: 10px;
 }
 
 img,picture {
