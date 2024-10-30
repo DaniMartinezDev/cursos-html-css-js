@@ -1,37 +1,50 @@
-/* Mini ejercitación anterior a Border */
+/* Ejercitaciones del curso de HTML y CSS de Dalto */
 
+/* Código posterior a CSS Shadows */ 
 body {
-  background-color: black;
+  background-color: #fff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
+  margin: 0;
 }
 
 .card{
-  background-color: coral;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #67f;
   text-align: center;
   width: 700px;
+  height: 700px;
   margin: auto;
+  margin-top: 10vh;
+  padding: 20px 10px;
+  box-shadow: 0 0 30px #0006;
 }
 
-h1{
-  padding-top: 100px;
-  font-size: 48px;
+.card_image {
+  margin-top: 30px;
+  width: 250px;
+  border-radius: 100%;
+}
+
+.card_title {
   margin: 0;
-  letter-spacing: 4px;
+  margin-top: 30px;
+  font-size: 72px;
+  letter-spacing: 3px;
 }
 
-h2{
-  font-size: 24px;
+.card_subtitle {
+  margin-top: -1px; 
+  font-size: 30px;
   font-weight: 100;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
-p{
-  padding: 20px;
-  background-color: lightcoral;
-  font-size: 16px;
+.card_content {
+  padding: 20px 30px;
+  padding-bottom: 0;
+  font-size: 20px;
   text-align: justify;
 }
-
-/* Mini ejercitación de colores */

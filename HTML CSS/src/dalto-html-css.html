@@ -8,288 +8,388 @@
     <link href="../styles/fonts.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <main>
     <h1>Curso de HTML y CSS de Dalto</h1>
 
     <h2>Capitulo 1: Introducción - Entendiendo la web, HTML y CSS</h2>
     
-    <h3>Entendiendo la web</h3>
-    <h4>Concepto de webs, servidores y URL/Enlace</h4>
-    <p>URLs/Enlaces: La web es como un hotel, en donde en cada habitación hay un contenido distinto. El enlace es el número de la habitación, o sea, la URL. Esa URL/Enlace se aloja en un servidor para que este disponible en internet.</p>
-    <h4>Rol de los navegadores</h4>
-    <p>Navegadores: Es el vehiculo entre clientes y servidores. La PC local manda una peticion, y el servidor responde enviando archivos en respuesta a esa petición (principio "solicitud-respuesta"). Ademas, los navegadores reciben y leen el codigo HTML/CSS (y demás) y lo hacen accesible al usuario.</p>
+      <h3>Entendiendo la web</h3>
+        <h4>Concepto de webs, servidores y URL/Enlace</h4>
+          <p>URLs/Enlaces: La web es como un hotel, en donde en cada habitación hay un contenido distinto. El enlace es el número de la habitación, o sea, la URL. Esa URL/Enlace se aloja en un servidor para que este disponible en internet.</p>
         
-    <h3>Entendiendo HTML y CSS</h3>
-    <h4>¿Que es HTML?</h4>
-    <p>Lenguaje de marcado: Agarra texto y lo presenta de una manera diferente. Existe HTML y Markdome (es más ligero y fácil que HTML), y se usa para hacer documentación (README.md por ejemplo). Esto significa que es un lenguaje interpretado (ejecuta el código en tiempo real)</p>
-    <p>Con HTML se arma la "ESTRUCTURA" de una página web. Cada componente de HTML son elementos (texto, imagenes, videos, forms, etc)</p>
-    <p>Cada elemento se engloba en ETIQUETAS, las cuales tienen etiquetas de apertura y cierre.</p>
-    <p>Otros temas a ver: atributos, etiquetas autocerrables, tipos de etiquetas, SEO.</p>
-    <h4>¿Qué es CSS?</h4>
-    <p>Las propiedades de un elemento, son declaradas, por defecto, por el navegador.</p>
-    <p>Para asignar propiedades, se inventó CSS, que es como una guía universal o standard para distintos navegadores.</p>
-    <p>CSS permite asignarle propiedades a los elementos HTML y decirle al navegador como queremos que sean mostrados los elementos.</p>
-    <p>CSS funciona mediante reglas de estilo. Estas reglas contienen selectores, bloques de declaraciones, que contienen propiedades y valores.</p>
-    <p>Tema a ver: Modos de selección de elementos, y todas las propiedades que se pueden asignar. Responsive design (adaptar la web a la pantalla).</p>
+          <h4>Rol de los navegadores</h4>
+          <p>Navegadores: Es el vehiculo entre clientes y servidores. La PC local manda una peticion, y el servidor responde enviando archivos en respuesta a esa petición (principio "solicitud-respuesta"). Ademas, los navegadores reciben y leen el codigo HTML/CSS (y demás) y lo hacen accesible al usuario.</p>
+        
+      <h3>Entendiendo HTML y CSS</h3>
+        <h4>¿Que es HTML?</h4>
+          <p>Lenguaje de marcado: Agarra texto y lo presenta de una manera diferente. Existe HTML y Markdome (es más ligero y fácil que HTML), y se usa para hacer documentación (README.md por ejemplo). Esto significa que es un lenguaje interpretado (ejecuta el código en tiempo real)</p>
+          <p>Con HTML se arma la "ESTRUCTURA" de una página web. Cada componente de HTML son elementos (texto, imagenes, videos, forms, etc)</p>
+          <p>Cada elemento se engloba en ETIQUETAS, las cuales tienen etiquetas de apertura y cierre.</p>
+          <p>Otros temas a ver: atributos, etiquetas autocerrables, tipos de etiquetas, SEO.</p>
+        
+          <h4>¿Qué es CSS?</h4>
+          <p>Las propiedades de un elemento, son declaradas, por defecto, por el navegador.</p>
+          <p>Para asignar propiedades, se inventó CSS, que es como una guía universal o standard para distintos navegadores.</p>
+          <p>CSS permite asignarle propiedades a los elementos HTML y decirle al navegador como queremos que sean mostrados los elementos.</p>
+          <p>CSS funciona mediante reglas de estilo. Estas reglas contienen selectores, bloques de declaraciones, que contienen propiedades y valores.</p>
+          <p>Tema a ver: Modos de selección de elementos, y todas las propiedades que se pueden asignar. Responsive design (adaptar la web a la pantalla).</p>
     
     
     
     <h2>Capitulo 2: HTML BÁSICO</h2>
-    <h3>Estructura de una etiqueta</h3>
-    <h4>Etiqueta de apertura + Contenido + Etiqueta de cierre</h4>
-    <p>Todas las etiquetas tienen una función, a nivel semantico, por eso, algunas quedan obsoletas. Por ejemplo, no se recomiendan usar las etiquetas que dan "estilo" a los elementos, ya que eso se hace en CSS.</p>
-    <p>Se deben cumplir las reglas semanticas, para mejorar el SEO en los navegadores. La semantica ayuda a trabajar mejor y que cada etiqueta cumpla un rol correcto.</p>
-    <p>Las etiquetas son como bloques.</p>
+      
+      <h3>Estructura de una etiqueta</h3>
+        <h4>Etiqueta de apertura + Contenido + Etiqueta de cierre</h4>
+          <p>Todas las etiquetas tienen una función, a nivel semantico, por eso, algunas quedan obsoletas. Por ejemplo, no se recomiendan usar las etiquetas que dan "estilo" a los elementos, ya que eso se hace en CSS.</p>
+          <p>Se deben cumplir las reglas semanticas, para mejorar el SEO en los navegadores. La semantica ayuda a trabajar mejor y que cada etiqueta cumpla un rol correcto.</p>
+          <p>Las etiquetas son como bloques.</p>
     
     
-    <h3>Estructura de una página web</h3>
-    <p>Escribir <code>html:5</code> para que VSC escriba la estructura básica de la página.</p>
-    <p><code>html</code> ==> Estructura general de la página</p>
-    <p><code>head</code> ==> Información y metadatos no visibles de la página. Asigna title, relaciona con otros archivos, etiquetas "meta" etc.</p>
-    <p><code>body</code> ==> Parte visible de la página.</p>
-    
-
-    <h3>Párrafos y encabezados</h3>
-    <h4>Parrafos (paragraph) ==> P</h4>
-    <p>Describen parrafos con contenido (texto por lo general). </p>
-    <p>Siempre deben tener una idea y un concepto en especifico.</p>
-    <h4>Encabezados (headings) ==> H1 - H6</h4>
-    <p>Encabezan las partes de la página web. El <code>h1</code> se utiliza una sola vez por página para titular el contenido de ella. El <code>h2</code> se utiliza para encabezar partes o secciones generales, y podemos seguir así hasta el <code>h6</code>.</p>
+      <h3>Estructura de una página web</h3>
+          <p>Escribir <code>html:5</code> para que VSC escriba la estructura básica de la página.</p>
+          <p><code>html</code> ==> Estructura general de la página</p>
+          <p><code>head</code> ==> Información y metadatos no visibles de la página. Asigna title, relaciona con otros archivos, etiquetas "meta" etc.</p>
+          <p><code>body</code> ==> Parte visible de la página.</p>
     
 
-    <h3>Listas ==> OL/UL + LI</h3>
-    <h4>Definición de listas</h4>
-    <p>Estan las ordenadas (orderer) y las desordenadas (unorderer). Sirven para organizar contenido o para las barras de navegación.</p>
-    <P>Al interior de los <code>ol</code> y <code>ul</code> se encuentran las <code>li</code>, que serían los elementos individuales de esas listas.</P>
-    <h4>Listas ordenadas (orderer) ==> OL</h4>
-    <p>Se enlistan con numeros o letras de forma ordenada. Es para contenido que necesita jerarquia u orden de pasos por ejemplo.</p>
-    <p></p>
-    <h4>Listas desordenadas (unorderer) ==> UL</h4>
-    <p>No importa el orden del contenido. Se suele usar para barras de navegacion</p>
-    <p></p>
+      <h3>Párrafos y encabezados</h3>
+        <h4>Parrafos (paragraph) ==> P</h4>
+          <p>Describen parrafos con contenido (texto por lo general). </p>
+          <p>Siempre deben tener una idea y un concepto en especifico.</p>
+    
+        <h4>Encabezados (headings) ==> H1 - H6</h4>
+          <p>Encabezan las partes de la página web. El <code>h1</code> se utiliza una sola vez por página para titular el contenido de ella. El <code>h2</code> se utiliza para encabezar partes o secciones generales, y podemos seguir así hasta el <code>h6</code>.</p>
     
 
-    <h3>Enlaces o hipervinculos(básico) ==> A</h3>
-    <h4>Diferencia entre pagina web y sitio web</h4>
-    <p>La pagina web es la codificacion individual, pero un sitio web, es un conjunto de paginas webs que conforman un proyecto, por ejemplo, una tienda online con elementos individuales que se generan en páginas webs individuales. </p>
-    <h4>Estructura del enlace</h4>
-    <p>La etiqueta a usar es <code>a</code>, y se debe usar un atributo, llamado <code>href=""</code>. Dentro de este atributo, va la ruta del directorio local, del servidor, o una ruta externa. Se recomienda usar el "https" y no solo el "http".</p>
-    <p>Atributo <code>target</code>: Se usa para elegir la acción que realizará el usuario: si se usa <code>_blank</code> se abre en una nueva pestaña, y si se deja el que trae por defecto (<code>_self</code>), el enlace se abre en la misma pestaña.</p>
-    <p>Atributo <code>title</code>: Se usa para poner un titulo visible cuando el usuario pone el mouse sobre el elemento. Este atributo se puede usar en otros elementos tambien, sobre todo en imagenes y formularios.</p>
-    <p>Entre las etiquetas, se debe escribir el texto o boton que se le mostrará al usuario.</p>
+      <h3>Listas ==> OL/UL + LI</h3>
+        <h4>Definición de listas</h4>
+          <p>Estan las ordenadas (orderer) y las desordenadas (unorderer). Sirven para organizar contenido o para las barras de navegación.</p>
+          <P>Al interior de los <code>ol</code> y <code>ul</code> se encuentran las <code>li</code>, que serían los elementos individuales de esas listas.</P>
+    
+        <h4>Listas ordenadas (orderer) ==> OL</h4>
+          <p>Se enlistan con numeros o letras de forma ordenada. Es para contenido que necesita jerarquia u orden de pasos por ejemplo.</p>
+    
+        <h4>Listas desordenadas (unorderer) ==> UL</h4>
+          <p>No importa el orden del contenido. Se suele usar para barras de navegacion</>
+        
+
+      <h3>Enlaces o hipervinculos(básico) ==> A</h3>
+        <h4>Diferencia entre pagina web y sitio web</h4>
+          <p>La pagina web es la codificacion individual, pero un sitio web, es un conjunto de paginas webs que conforman un proyecto, por ejemplo, una tienda online con elementos individuales que se generan en páginas webs individuales. </p>
+    
+        <h4>Estructura del enlace</h4>
+          <p>La etiqueta a usar es <code>a</code>, y se debe usar un atributo, llamado <code>href=""</code>. Dentro de este atributo, va la ruta del directorio local, del servidor, o una ruta externa. Se recomienda usar el "https" y no solo el "http".</p>
+          <p>Atributo <code>target</code>: Se usa para elegir la acción que realizará el usuario: si se usa <code>_blank</code> se abre en una nueva pestaña, y si se deja el que trae por defecto (<code>_self</code>), el enlace se abre en la misma pestaña.</p>
+          <p>Atributo <code>title</code>: Se usa para poner un titulo visible cuando el usuario pone el mouse sobre el elemento. Este atributo se puede usar en otros elementos tambien, sobre todo en imagenes y formularios.</p>
+          <p>Entre las etiquetas, se debe escribir el texto o boton que se le mostrará al usuario.</p>
     
 
-    <h3>Imágenes ==> IMG </h3>
-        <p>La etiqueta <code>img</code> no lleva etiqueta de cierre (self closing tag), el elemento se carga a través del atributo <code>SRC=""</code>.</p>
-    <p>Atributo <code>alt</code> ==> Permite escribir un texto "alternativo" que aparecerá si la imagen no se carga correctamente.</p>
+      <h3>Imágenes ==> IMG </h3>
+          <p>La etiqueta <code>img</code> no lleva etiqueta de cierre (self closing tag), el elemento se carga a través del atributo <code>SRC=""</code>.</p>
+          <p>Atributo <code>alt</code> ==> Permite escribir un texto "alternativo" que aparecerá si la imagen no se carga correctamente.</p>
     
     
-    <h3>Rutas</h3>
-    <h4>Definiciones</h4>
-    <p>Se trata de estrategias de trabajo a la hora de confeccionar proyectos a través de diferentes directorios.</p>
-    <p>Las rutas refieren especificamente a como acceder a un directorio desde una posición (por ejemplo, desde un index). El mecanismo de acceso consiste en usar la barra <code>/</code> para ir a un directorio "posterior" y el comando <code>../</code> para un directorio "anterior". Estos comandos se pueden ir acumulando para entrar a un directorio dentro de otro.</p>
-    <p>En VSC, se puede poner la ruta arrastrando el directorio a un lugar del código. Tener cuidado si se cambia el nombre de las rutas relativas.</p>
-    <h4>Tipos de rutas</h4>
-    <p>Rutas Absolutas: son las que rutas que no importan desde donde se acceda, siempre nos dirige a un mismo lugar. EL mejor ejemplo son las URL</p>
-    <p>Rutas Relativas: Dependen del lugar de "inicio" del enlace, por lo que depende de como se escriba la ruta con / y ../, la "llamada" será la clave.</p>
+      <h3>Rutas</h3>
+        <h4>Definiciones</h4>
+          <p>Se trata de estrategias de trabajo a la hora de confeccionar proyectos a través de diferentes directorios.</p>
+          <p>Las rutas refieren especificamente a como acceder a un directorio desde una posición (por ejemplo, desde un index). El mecanismo de acceso consiste en usar la barra <code>/</code> para ir a un directorio "posterior" y el comando <code>../</code> para un directorio "anterior". Estos comandos se pueden ir acumulando para entrar a un directorio dentro de otro.</p>
+          <p>En VSC, se puede poner la ruta arrastrando el directorio a un lugar del código. Tener cuidado si se cambia el nombre de las rutas relativas.</p>
+    
+        <h4>Tipos de rutas</h4>
+          <p>Rutas Absolutas: son las que rutas que no importan desde donde se acceda, siempre nos dirige a un mismo lugar. EL mejor ejemplo son las URL</p>
+          <p>Rutas Relativas: Dependen del lugar de "inicio" del enlace, por lo que depende de como se escriba la ruta con / y ../, la "llamada" será la clave.</p>
 
 
-    <h3>Formularios</h3>
-      <h4>Definiciones</h4>
-        <p>Forma de pedirle datos al usuario (nombre, apellido, mail, opiniones, confirmaciones, etc).</p>
-        <p>Le da un formato a los datos ingresados, y facilitan la interfaz del usuario</p>
-      <h4>¿Cómo se compone un formulario?</h4>
-       <p>Primero se coloca la etiqueta <code>form</code> para dar el elemento de bloque que contendrá el formulario.</p>
-        <p>Luego, viene la etiqueta <code>input</code>, que indica al usuario que deberá ingresar un dato. Dentro del input, se colocan los atributos que definiran el tipo de dato, y demás funcionalidades.</p>
-        <p>Atributos posibles para input:</p>
-        <ul>
-          <li><code>Type</code> ==> Indica el tipo de dato a ingresar. Es el más importante, y hay varios tipos posibles. Los más destacados son:</li>
+      <h3>Formularios</h3>
+        <h4>Definiciones</h4>
+          <p>Forma de pedirle datos al usuario (nombre, apellido, mail, opiniones, confirmaciones, etc).</p>
+          <p>Le da un formato a los datos ingresados, y facilitan la interfaz del usuario</p>
+      
+        <h4>¿Cómo se compone un formulario?</h4>
+          <p>Primero se coloca la etiqueta <code>form</code> para dar el elemento de bloque que contendrá el formulario.</p>
+          <p>Luego, viene la etiqueta <code>input</code>, que indica al usuario que deberá ingresar un dato. Dentro del input, se colocan los atributos que definiran el tipo de dato, y demás funcionalidades.</p>
+          <p>Atributos posibles para input:</p>
           <ul>
-            <li><code>Text</code>==> Ingreso de texto</li>
-            <li><code>Color</code>==> Seleccionar un color</li>
-            <li><code>Email</code> ==> Es como un texto, pero requiere el formato de un mail (arroba con texto atras).</li>
-            <li><code>Password</code>No se muestra el contenido escrito.</li>
-            <li><code>Checkbox</code>Genera una caja para dar okey</li>
-            <li><code>Radio</code>Permite generar una de entre varias opciones.</li>
-            <li><code>File</code>Permite seleccionar y subir un archivo.</li>
-            <li><code>Date</code>Permite seleccionar una fecha.</li>
-            <li><code>Summit</code>Genera el boton de "Enviar" y enviar los datos al servidor. Con el atributo <code>value</code> se le puede cambiar el texto a mostrar.</li>
+            <li><code>Type</code> ==> Indica el tipo de dato a ingresar. Es el más importante, y hay varios tipos posibles. Los más destacados son:</li>
+            <ul>
+              <li><code>Text</code>==> Ingreso de texto</li>
+              <li><code>Color</code>==> Seleccionar un color</li>
+              <li><code>Email</code> ==> Es como un texto, pero requiere el formato de un mail (arroba con texto atras).</li>
+              <li><code>Password</code>No se muestra el contenido escrito.</li>
+              <li><code>Checkbox</code>Genera una caja para dar okey</li>
+              <li><code>Radio</code>Permite generar una de entre varias opciones.</li>
+              <li><code>File</code>Permite seleccionar y subir un archivo.</li>
+              <li><code>Date</code>Permite seleccionar una fecha.</li>
+              <li><code>Summit</code>Genera el boton de "Enviar" y enviar los datos al servidor. Con el atributo <code>value</code> se le puede cambiar el texto a mostrar.</li>
+            </ul>
+            <li><code>Required</code>==> Obliga al usuario a completar el input con algun dato. Es un atributo de funcionalidad, no visual.</li>
+            <li><code>Name</code>==> Sirve como un identificador para el input, que servirá a la hora de ser usado por el servidor. Cuando esté lo reciba, verificará el dato ingreso y actuará en consecuencia. Es un atributo de funcionalidad, no visual.</li>
+            <li><code>Minlength & Maxlength = "..."</code>==> Establece un minimo y/o maximo de datos a ingresar.</li>
+            <li><code>Placeholder</code>==> Muestra un texto o dato de ejemplo, para guiar al usuario. Es un atributo visual, no funcional.</li>
+            <li><code>Readonly</code>==> Hace que el input solo este disponible para su lectura.</li>
+            <li><code>Disabled</code>==> Hace que el input no pueda ser modificado ni seleccionado. Sobre todo, no se enviará la información al servidor. Podría usarse para temrinos y condiciones que deban ser leidas y no enviadas al servidor.</li>
+            <li><code>Value</code>==> Es el dato que recibirá el servidor, ya que lo va a almacenar en ese "Value". Se usa con JavaScript.</li>
+            <li><code>Method</code>==> Establece la manera en la cual se enviaran los datos al servidor. Se usa con JavaScript.</li>
           </ul>
-          <li><code>Required</code>==> Obliga al usuario a completar el input con algun dato. Es un atributo de funcionalidad, no visual.</li>
-          <li><code>Name</code>==> Sirve como un identificador para el input, que servirá a la hora de ser usado por el servidor. Cuando esté lo reciba, verificará el dato ingreso y actuará en consecuencia. Es un atributo de funcionalidad, no visual.</li>
-          <li><code>Minlength & Maxlength = "..."</code>==> Establece un minimo y/o maximo de datos a ingresar.</li>
-          <li><code>Placeholder</code>==> Muestra un texto o dato de ejemplo, para guiar al usuario. Es un atributo visual, no funcional.</li>
-          <li><code>Value</code>==> Es el dato que recibirá el servidor, ya que lo va a almacenar en ese "Value". Se usa con JavaScript.</li>
-          <li><code>Method</code>==> Establece la manera en la cual se enviaran los datos al servidor. Se usa con JavaScript.</li>
-        </ul>
     
 
     
     <h2>Capitulo 3: CSS BÁSICO</h2>
     
-    <h3>Introducción a CSS</h3>
-      <h4>Definiciones</h4>
-        <p>La Cascada se refiere a como se van definiendo propiedades a los elementos de HTML, y como van "cayendo" según el orden de selección.</p>
-        <p>Se trata de entender como funciona cada propiedad y como se van mezclando y relacionan esas propiedades, ya demás, como se relacionan los elementos entre sí (por ejemplo, en la herencia de elementos).</p>
-      <h4>Integración de CSS a los elementos HTML</h4>
-        <p>Primer método ==> Estilos en línea: Se le da <code>style="..."</code> como si fuera un atributo del elemento afectado. Se pueden dar varios estilos a la vez. Pero no esta recomendado.</p>
-        <p>Segundo método ==> Etiqueta <code>Style</code> dentro de HTML. No se recomienda tampoco.</p>
-        <p>Tercer método y el más recomendado ==> Linkear una hoja de estilo (en el head del HTML) a una hoja de estilo. Se usa la etiqueta <code><link href="..." rel="stylesheet" type="text/css"></code> para vincular archivos.</p>
+      <h3>Introducción a CSS</h3>
+        <h4>Definiciones</h4>
+          <p>La Cascada se refiere a como se van definiendo propiedades a los elementos de HTML, y como van "cayendo" según el orden de selección.</p>
+          <p>Se trata de entender como funciona cada propiedad y como se van mezclando y relacionan esas propiedades, ya demás, como se relacionan los elementos entre sí (por ejemplo, en la herencia de elementos).</p>
+      
+        <h4>Integración de CSS a los elementos HTML</h4>
+          <p>Primer método ==> Estilos en línea: Se le da <code>style="..."</code> como si fuera un atributo del elemento afectado. Se pueden dar varios estilos a la vez. Pero no esta recomendado.</p>
+          <p>Segundo método ==> Etiqueta <code>Style</code> dentro de HTML. No se recomienda tampoco.</p>
+          <p>Tercer método y el más recomendado ==> Linkear una hoja de estilo (en el head del HTML) a una hoja de estilo. Se usa la etiqueta <code><link href="..." rel="stylesheet" type="text/css"></code> para vincular archivos.</p>
    
     
-    <h3>Selectores</h3>
-      <h4>Formas de seleccionar elementos</h4>
-        <p>Selección por elemento ==> Indicar el tipo de elemento, seleccionando así todos los elementos que sean del mismo tipo, por ejemplo, párrafos. Se suele usar para los body o elementos "raiz", pero por lo general, se suele usar la selección por clase.</p>
-        <p>Selección por clase ==> Es la manera recomendada y más utilizada. Se trata de darle clases a los elementos HTML de manera individual o grupal, a traves de la etiqueta <code>class</code> como si fuera un atributo más del elemento HTML a seleccionar. Se debe indicar con un punto al inicio de la regla de declaración en el CSS. Se pueden "anidar" varias selecciones de clases, poniendo un punto en el medio de cada clase dentro de la familia de elementos HTML. A su vez, se le pueden dar varias clases a un mismo elemento, separando por un espacio entre las clases.</p>
-        <p>Selección por identificador único (id) ==> Se usa para un único elemento, no se puede repetir. Se debe usar el comando # para seleccionar.</p>
+      <h3>Selectores</h3>
+        <h4>Formas de seleccionar elementos</h4>
+          <p>Selección por elemento ==> Indicar el tipo de elemento, seleccionando así todos los elementos que sean del mismo tipo, por ejemplo, párrafos. Se suele usar para los body o elementos "raiz", pero por lo general, se suele usar la selección por clase.</p>
+          <p>Selección por clase ==> Es la manera recomendada y más utilizada. Se trata de darle clases a los elementos HTML de manera individual o grupal, a traves de la etiqueta <code>class</code> como si fuera un atributo más del elemento HTML a seleccionar. Se debe indicar con un punto al inicio de la regla de declaración en el CSS. Se pueden "anidar" varias selecciones de clases, poniendo un punto en el medio de cada clase dentro de la familia de elementos HTML. A su vez, se le pueden dar varias clases a un mismo elemento, separando por un espacio entre las clases.</p>
+          <p>Selección por identificador único (id) ==> Se usa para un único elemento, no se puede repetir. Se debe usar el comando # para seleccionar.</p>
 
 
-    <h3>Propiedades de fuente y texto</h3>
-      <h4>Propiedades más utilizadas</h4>
-        <p><code>color</code> ==> Color del texto o elemento.</p>
-        <p><code>font-family</code> ==> Tipografía a utilizar. Se pueden colocar varias fuentes, usando una coma entre ellas, a modo de "fallback".</p>
-        <p><code>font-size</code> ==> Tamaño de letra. Se suele usar px, em o rem para medir el tamaño de la fuente.</p>
-        <p><code>font-weight</code> ==> Indica el grosor de la fuente, se usa el valor <code>"bold"</code> para resaltar como "negrita" o valores númericos de entre 100 a 900, siendo el 100 el menos grueso. Estos números va a depender de la fuente, ya que muchas solo tienen dos o tres opciones definidas (400 o 700 por ejemplo). Se usa el esquema de rangos numericos, y se elige el número más cercano para asignar la propiedad, por ejemplo, el bold se suele usar para el 700. El valor <code>"bolder"</code> elige el "siguiente escalón" del grosor que se viene utilizando. </p>
-        <p><code>font-style</code> ==> Da inclinación al texto. El valor <code>normal</code> es el que viene por defecto. El valor <code>italic</code> inclina la letra y el valor <code>oblique</code> permite manejar mejor la inclinación asignando un valor de "numero + deg" (40deg = 40 grados por ejemplo).</p>
-        <p><code>text-align</code> ==> Alinea el texto dentro de su contenedor. El valor <code>left</code> inicia el texto a la izquierda, el valor <code>right</code> inicia el texto a la derecha, usado en lenguas arabicas. El valor <code>center</code> mueve el texto al centro. Por último, el valor <code>justify</code> funciona como el justificado de Word, aumentando el tamaño entre letras.</p>
-        <p><code>text-decoration</code> ===> Le da una linea arriba con el valor <code>overline</code> o abajo con <code>underline</code> (es decir, subrayado), o puede tachar el texto con el valor <code>line-through</code>. Se puden mezclar usando dos o tres. Las dos últimas son las más usadas. El valor por defecto es <code>none</code> para la mayoria de elementos, excepto para los links. Se puede sacar el subrayado por defecto para los links, para personalizar navegadores o botones con enlaces.</p>
-        <p><code>line-height</code> ==> Asigna la altura entre lineas. Funciona como el Word, con valores númericos. Se suele usar el valor 1.3 o 1.4 por lo general.</p>
-        <p><code>letter-spacing</code> ==> Asigna distancia entre letras. Se suele usar en botones por lo general.</p>
-        <p><code>text-transform</code> ==> Cambia el tipo de letra entgre mayuscula y minuscula. El valor <code>uppercase</code> convierte a todas las letras en mayuscula. El valor <code>lowercase</code> convierte todo a minuscula, el valor <code>capitalize</code> pone la primera letra en mayuscula.</p>
-        <p><code>text-shadow</code> ==> Da sombra al texto.</p>
-        <p><code>word-wrap</code> ==> Con el valor <code>break-word</code> corta la oración en silabas para dar el salto de línea.</p>
-        <p><code>word-break</code> ==> Con el valor <code>break-all</code> corta la palabra por donde termina la línea, sin importar la silaba.</p>
+      <h3>Propiedades de fuente y texto</h3>
+        <h4>Propiedades más utilizadas</h4>
+          <p><code>color</code> ==> Color del texto o elemento.</p>
+          <p><code>font-family</code> ==> Tipografía a utilizar. Se pueden colocar varias fuentes, usando una coma entre ellas, a modo de "fallback".</p>
+          <p><code>font-size</code> ==> Tamaño de letra. Se suele usar px, em o rem para medir el tamaño de la fuente.</p>
+          <p><code>font-weight</code> ==> Indica el grosor de la fuente, se usa el valor <code>"bold"</code> para resaltar como "negrita" o valores númericos de entre 100 a 900, siendo el 100 el menos grueso. Estos números va a depender de la fuente, ya que muchas solo tienen dos o tres opciones definidas (400 o 700 por ejemplo). Se usa el esquema de rangos numericos, y se elige el número más cercano para asignar la propiedad, por ejemplo, el bold se suele usar para el 700. El valor <code>"bolder"</code> elige el "siguiente escalón" del grosor que se viene utilizando. </p>
+          <p><code>font-style</code> ==> Da inclinación al texto. El valor <code>normal</code> es el que viene por defecto. El valor <code>italic</code> inclina la letra y el valor <code>oblique</code> permite manejar mejor la inclinación asignando un valor de "numero + deg" (40deg = 40 grados por ejemplo).</p>
+          <p><code>text-align</code> ==> Alinea el texto dentro de su contenedor. El valor <code>left</code> inicia el texto a la izquierda, el valor <code>right</code> inicia el texto a la derecha, usado en lenguas arabicas. El valor <code>center</code> mueve el texto al centro. Por último, el valor <code>justify</code> funciona como el justificado de Word, aumentando el tamaño entre letras.</p>
+          <p><code>text-decoration</code> ===> Le da una linea arriba con el valor <code>overline</code> o abajo con <code>underline</code> (es decir, subrayado), o puede tachar el texto con el valor <code>line-through</code>. Se puden mezclar usando dos o tres. Las dos últimas son las más usadas. El valor por defecto es <code>none</code> para la mayoria de elementos, excepto para los links. Se puede sacar el subrayado por defecto para los links, para personalizar navegadores o botones con enlaces.</p>
+          <p><code>line-height</code> ==> Asigna la altura entre lineas. Funciona como el Word, con valores númericos. Se suele usar el valor 1.3 o 1.4 por lo general.</p>
+          <p><code>letter-spacing</code> ==> Asigna distancia entre letras. Se suele usar en botones por lo general.</p>
+          <p><code>text-transform</code> ==> Cambia el tipo de letra entgre mayuscula y minuscula. El valor <code>uppercase</code> convierte a todas las letras en mayuscula. El valor <code>lowercase</code> convierte todo a minuscula, el valor <code>capitalize</code> pone la primera letra en mayuscula.</p>
+          <p><code>text-shadow</code> ==> Da sombra al texto.</p>
+          <p><code>word-wrap</code> ==> Con el valor <code>break-word</code> corta la oración en silabas para dar el salto de línea.</p>
+          <p><code>word-break</code> ==> Con el valor <code>break-all</code> corta la palabra por donde termina la línea, sin importar la silaba.</p>
               
-      <h4>Tipografias externas</h4>
-        <p>Se puede importar familias de fuentes a través de dos mecanismos, uno más facil y otra más complicada.</p>
-        <p>Primera opción ==> Google Fonts: Elegir las fuentes y linkear el enlace que brinda la pagina, en el head del HTML.</p>
-        <p>Segunda opción ==> Instalación de fuentes en una carpeta por separado. Se deben descargar las fuentes y copiarlas en el proyecto. A su vez, se crea una hoja de estilo exclusivo para las fuentes, y se configura cada fuente en detalle, con el comando <code>@font-face</code> y desagregando el tamaño de fuente.</p>
+        <h4>Tipografias externas</h4>
+          <p>Se puede importar familias de fuentes a través de dos mecanismos, uno más facil y otra más complicada.</p>
+          <p>Primera opción ==> Google Fonts: Elegir las fuentes y linkear el enlace que brinda la pagina, en el head del HTML.</p>
+          <p>Segunda opción ==> Instalación de fuentes en una carpeta por separado. Se deben descargar las fuentes y copiarlas en el proyecto. A su vez, se crea una hoja de estilo exclusivo para las fuentes, y se configura cada fuente en detalle, con el comando <code>@font-face</code> y desagregando el tamaño de fuente.</p>
     
-    <h3>Box model (Modelo de la caja)</h3>
-      <h4>Definiciones</h4>
-        <p>Concepto que describe como se diseñan y colocan los elementos en una página web. En HTML todo se considera una caja, y estas cajas van cambiando de posición, tamaño, muestra o no, y demás propiedades.</p>}
-        <p>En resumen, el box model se compone de cuatro elementos:</p>
+    
+      <h3>Box model (Modelo de la caja)</h3>
+        <h4>Definiciones</h4>
+          <p>Concepto que describe como se diseñan y colocan los elementos en una página web. En HTML todo se considera una caja, y estas cajas van cambiando de posición, tamaño, muestra o no, y demás propiedades.</p>}
+          <p>En resumen, el box model se compone de cuatro elementos:</p>
           <ol>
             <li>Content o Contenido ==> Es la zona donde se ubica unicamente el contenido propiamente dicho.</li>
             <li>Padding a Relleno ==> Es la zona que recubre al contenido y esta antes que el borde de la caja.</li>
             <li>Border o Borde ==> Es la zona que delimita a la caja, y puede mostrarse o no, pero siempre esta presente (salvo que se indique que su tamaño es 0).</li>
             <li>Margin o Margen ==> Si bien no forma parte de la caja, es la zona que rodea a esta y la separa de las otras cajas (es decir, otros elementos.)</li>
           </ol>
-        <p>Importante ==> El Content, Padding y el Border forman parte de la caja, mientras que el Margin no. Por ello, el Margin solo afecta la distancia, y no los atributos "visuales" en sí (como el color o presentación).</p>
+          <p>Importante ==> El Content, Padding y el Border forman parte de la caja, mientras que el Margin no. Por ello, el Margin solo afecta la distancia, y no los atributos "visuales" en sí (como el color o presentación).</p>
     
-      <h4>Width & Height (Ancho y Alto)</h4>
-        <p>Estas dos propiedades le asignan el ancho y el alto del elemento seleccionado. Importante ==> Cuando se usan porcentajes para dar valor a las cajas, ese porcentaje será en relación a la caja "contenedora", es decir, a la caja "padre". Esto no aplica cuando se usan "px" o "viewport".</p>
-        <p>Una vez asignadas las propiedades, se le pueden brindar las demás propiedades para manipular la "caja".</p>
+        <h4>Width & Height (Ancho y Alto)</h4>
+          <p>Estas dos propiedades le asignan el ancho y el alto del elemento seleccionado. Importante ==> Cuando se usan porcentajes para dar valor a las cajas, ese porcentaje será en relación a la caja "contenedora", es decir, a la caja "padre". Esto no aplica cuando se usan "px" o "viewport".</p>
+          <p>Una vez asignadas las propiedades, se le pueden brindar las demás propiedades para manipular la "caja".</p>
       
-      <h4>Shorthands (Atajos de escritura)</h4>
-        <p>Concepto de "Shorthand" ==> Es una manera "acortada" y simplificada de escribir las propiedades y valores de las declaraciones.</p>
-        <p>Existen varios tipos de Shorthand. Por ejemplo, se puede reemplazar el "top" (arriba), "right" (derecha), "bottom" (abajo) y "left" (izquierda) escribiendo estos cuatro valores en una sola línea. Esto se hace declarando estos cuatro valores en el sentido horario del reloj ==> (valor 1 = top (arriba); valor 2 = right; valor 3 = bottom y valor 4 = left). Si solo se quiere diferenciar por el par ancho y alto, se escriben solo dos valores, donde el primero es el Height (Alto) y el segundo valor es el Width (Ancho). Por último, si el valor será el mismo para los cuatro lados, entonces sol se debe escribir un valor.</p>
-        <p>Cuando un valor a dar es cero, no requiere escribir la unidad de medida (o sea, solo escribir el cero, sin px o rem o vw).</p>
+        <h4>Shorthands (Atajos de escritura)</h4>
+          <p>Concepto de "Shorthand" ==> Es una manera "acortada" y simplificada de escribir las propiedades y valores de las declaraciones.</p>
+          <p>Existen varios tipos de Shorthand. Por ejemplo, se puede reemplazar el "top" (arriba), "right" (derecha), "bottom" (abajo) y "left" (izquierda) escribiendo estos cuatro valores en una sola línea. Esto se hace declarando estos cuatro valores en el sentido horario del reloj ==> (valor 1 = top (arriba); valor 2 = right; valor 3 = bottom y valor 4 = left). Si solo se quiere diferenciar por el par ancho y alto, se escriben solo dos valores, donde el primero es el Height (Alto) y el segundo valor es el Width (Ancho). Por último, si el valor será el mismo para los cuatro lados, entonces sol se debe escribir un valor.</p>
+          <p>Cuando un valor a dar es cero, no requiere escribir la unidad de medida (o sea, solo escribir el cero, sin px o rem o vw).</p>
     
-      <h4>Padding & Margin (Relleno y Margen)</h4>
-        <p>Padding ==> Es el espacio entre el contenido y el borde de una caja. Aumenta el tamaño que hay entre estos dos atributos.</p>
-        <p>Margin ==> Permite separar los elementos (cajas) entre sí.</p> 
-        <p>Efecto "margin colapse" ==> hace que el margen "mayor" predomine entre los margenes de cada caja. De este modo los margenes se colapsan y se evita "sumar" los margenes diferentes. Cuando los margenes son iguales, tampoco se suman, sino que queda el valor "igual". Esto pasa con los elementos "hermanos", o sea, los elementos que estan dentro de la misma caja "padre" que los contiene. Este efecto se puede alterar con CSS Flexbox y CSS Grid.</p>      
+        <h4>Padding & Margin (Relleno y Margen)</h4>
+          <p>Padding ==> Es el espacio entre el contenido y el borde de una caja. Aumenta el tamaño que hay entre estos dos atributos.</p>
+          <p>Margin ==> Permite separar los elementos (cajas) entre sí.</p> 
+          <p>Efecto "margin colapse" ==> hace que el margen "mayor" predomine entre los margenes de cada caja. De este modo los margenes se colapsan y se evita "sumar" los margenes diferentes. Cuando los margenes son iguales, tampoco se suman, sino que queda el valor "igual". Esto pasa con los elementos "hermanos", o sea, los elementos que estan dentro de la misma caja "padre" que los contiene. Este efecto se puede alterar con CSS Flexbox y CSS Grid.</p>      
       
-      <h4>Border (Bordes)</h4>
-        <p>Cuatro propiedades modificables:</p>
-        <ul>
-          <li><code>border-widht</code> ==> Modifica el tamaño, generalmente se suele usar px.</li>
-          <li><code>border-style</code> ==> Modifica el estilo. Estan disponibles cuatro estilos, aunque el que más se usa es "solid". Los otros son dashed" (intermitente), el "groove" (3D), el "dotted" (punteado" y por último, el valor "hidden" que oculta el borde, pero sigue existiendo.</li>
-          <li><code>border-color</code> ==> Modifica el color. Si se pone el valor "transparent" va a afectar al tamaño de la caja, a diferencia de poner "hidden" en el border-style.</li>
-          <li><code>border-radius</code> ==> Modifica el radio de las esquinas. Se usa de dos modos, con px (redondeo más leve) o con porcentajes (hace un redondeo más grande, ya que afecta desde el centro del elemento).</li>
-        </ul>
-        <p>Importante ==> Las primeras tres propiedades se usan en conjunto, a través del Shorthand "widht-style-color". El border-radius no es obligatorio, y se debe declarar en una línea aparte.</p>
-        <p>Modificación de los lados del borde ==> Usar el atributo top/right/bottom/left para modificar un lado en concreto. Por defecto, se modifican los cuatro lados de los bordes.</p>
-        <p>Eliminación de bordes de un elemento ==> Se pone <code>border = none</code> para sacarle un borde a un input por ejemplo.</p>
+        <h4>Border (Bordes)</h4>
+          <p>Cuatro propiedades modificables:</p>
+          <ul>
+            <li><code>border-widht</code> ==> Modifica el tamaño, generalmente se suele usar px.</li>
+            <li><code>border-style</code> ==> Modifica el estilo. Estan disponibles cuatro estilos, aunque el que más se usa es "solid". Los otros son dashed" (intermitente), el "groove" (3D), el "dotted" (punteado" y por último, el valor "hidden" que oculta el borde, pero sigue existiendo.</li>
+            <li><code>border-color</code> ==> Modifica el color. Si se pone el valor "transparent" va a afectar al tamaño de la caja, a diferencia de poner "hidden" en el border-style.</li>
+            <li><code>border-radius</code> ==> Modifica el radio de las esquinas. Se usa de dos modos, con px (redondeo más leve) o con porcentajes (hace un redondeo más grande, ya que afecta desde el centro del elemento). Si se pone un 100% a un elemento cuadro, se convierte en un circulo.</li>
+          </ul>
+          <p>Importante ==> Las primeras tres propiedades se usan en conjunto, a través del Shorthand "widht-style-color". El border-radius no es obligatorio, y se debe declarar en una línea aparte.</p>
+          <p>Modificación de los lados del borde ==> Usar el atributo top/right/bottom/left para modificar un lado en concreto. Por defecto, se modifican los cuatro lados de los bordes.</p>
+          <p>Eliminación de bordes de un elemento ==> Se pone <code>border = none</code> para sacarle un borde a un input por ejemplo.</p>
         
-      <h4>Box Sizing (Tamaño de la caja)</h4>
-        <p>Es la propiedad de CSS que calcula el total del tamaño de la caja. Existen dos formas de calcular:</p>
-        <ul><li>Content-box ==> Es el predeterminado, los valores "weitd" y "heigth" afectan al Content, y entonces, las demás "capas" (Padding & Border) se le suman a ese valor determinado, haciendo incrementar a la "caja" aún más del valor del content. No es el método recomendado en la actualidad, porque suele "deformar" los tamaños y es dificil de calcular medidas. Se declara con <code>box-sizing = content-box</code>, aunque como viene por "defecto", no suele usarse.</li>
-        <li>Border-box ==> Se posiciona el tamaño desde el Border, por lo tanto, la caja va a tener una medida fija, y lo que se va ajustando es el Content. Permite un mayor control de las cajas. Se declara con <code>box-sizing = border-box</code>.</li>
-      </ul>
-        
-    
-    <h3>Colores en CSS</h3>
-      <h4>Formas de dar color en CSS</h4>
-        <ul>
-          <li>RGB/RGBA ==> Las siglas significan Red Green Blue, y son los tres colores primarios de la luz. Cada uno de ellos contiene 256 valores, que van del 0 al 255 (el más alto). El Alpha controla la opacidad de esas transparencias (por eso es RGBA). Se define de la siguiente manera <code>color = rgba(255, 255, 255, 50)</code>. Hay páginas como RGBA Picker para poder calcular el color a elegir.</li>
-          <li>HSL/HSLA ==> No se suele utilizar, se basa en un circulo de colores de 180 grados, la saturación y la luminancia.</li>
-          <li>Hexadecimal ==> Permite la misma cantidad de colores que RGB. El sistema se basa en un codigo de 6 caracteres, divididos en tres pares (como el RGB) en donde el primero, el tercero y el quinto van a definir la escala de RGB, y el segundo, cuarto y sexto van a definir al caracter anterior, para brindar más especificidad. Los caracterres tienen 16 posibles valores, que van desde el "0" (el más bajo) hasta la letra "f" (el más alto). Se pueden usar abreviaturas en el código, cuando se repitan caracteres, pasando de un #ffffff a un #fff por ejemplo. Al igual que antes, agregando uno o dos caracteres más, se puede definir la opacidad, donde el "0" da transparencia total, y la "f" una opacidad total.</li>
-        </ul>
-      
-      
-    <h3>CSS Units (Unidades de medidas)</h3>
-      <h4>Definición:</h4>
-        <p>Se suele dividir en dos grandes grupos de unidades:</p>
-        <ul>
-          <li>Unidades Absolutas: Son unidades que "no varian" o no tienen relación directa con otros elementos. Sirve sobre todo para tener un control de las cajas, pero como punto negativo, es malo en temas de "design responsive". Se incluye en este grupo a:</li>
-            <ul>
-              <li>Pixeles (parte más minima de luz del monitor). Se usa normalmente para definir el alto y ancho de imagenes, las tipografias, y los Padding, Border y Margin.</li>
-              <li>Centimentos.</li>
-              <li>Milimetros.</li>
-              <li>Pulgadas.</li>
-            </ul>
-          <li>Unidades Relativas: Son unidades que dependen de otro valor asociado. Son muy usadas para el "design responsive". Tienen una relación directa con el tamaño de la ventana (viewport) o con el elemento contenedor (em) o el elemento raiz (rem) del elemento que se está modificando. Se incluyen:
-            <ul>
-              <li>Porcentajes (%) que estan en relación a la caja contenedora (no se usa para textos)</li>
-              <li>"em": vale el font-size del elemento "padre" o "abuelo" (si el "padre" no esta definido) y lo multiplica por ese valor del "padre" (3em multipica por 3, pasando de 10px a 30 px por ejemplo), sirviendo para dar coherencia a las fuentes. Por eso, se recomienda su uso en tipografias.</li>
-              <li>"rem" hace lo mismo que el "em", pero va a buscar al elemento "raiz" del elemento html.</li>
-              <li>Valores viewport: se usan para medir en relación a la ventana activa, usando el <code>vw</code> para medir el alto y el <code>vh</code> para el alto disponible, este último es muy útil para ventanas modales o para diseños muy responsivos.</li>
-            </ul>
+        <h4>Box Sizing (Tamaño de la caja)</h4>
+          <p>Es la propiedad de CSS que calcula el total del tamaño de la caja. Existen dos formas de calcular:</p>
+          <ul><li>Content-box ==> Es el predeterminado, los valores "weitd" y "heigth" afectan al Content, y entonces, las demás "capas" (Padding & Border) se le suman a ese valor determinado, haciendo incrementar a la "caja" aún más del valor del content. No es el método recomendado en la actualidad, porque suele "deformar" los tamaños y es dificil de calcular medidas. Se declara con <code>box-sizing = content-box</code>, aunque como viene por "defecto", no suele usarse.</li>
+          <li>Border-box ==> Se posiciona el tamaño desde el Border, por lo tanto, la caja va a tener una medida fija, y lo que se va ajustando es el Content. Permite un mayor control de las cajas. Se declara con <code>box-sizing = border-box</code>.</li>
         </ul>
         
+    
+      <h3>Colores en CSS</h3>
+        <h4>Formas de dar color en CSS</h4>
+          <ul>
+            <li>RGB/RGBA ==> Las siglas significan Red Green Blue, y son los tres colores primarios de la luz. Cada uno de ellos contiene 256 valores, que van del 0 al 255 (el más alto). El Alpha controla la opacidad de esas transparencias (por eso es RGBA). Se define de la siguiente manera <code>color = rgba(255, 255, 255, 50)</code>. Hay páginas como RGBA Picker para poder calcular el color a elegir.</li>
+            <li>HSL/HSLA ==> No se suele utilizar, se basa en un circulo de colores de 180 grados, la saturación y la luminancia.</li>
+            <li>Hexadecimal ==> Permite la misma cantidad de colores que RGB. El sistema se basa en un codigo de 6 caracteres, divididos en tres pares (como el RGB) en donde el primero, el tercero y el quinto van a definir la escala de RGB, y el segundo, cuarto y sexto van a definir al caracter anterior, para brindar más especificidad. Los caracterres tienen 16 posibles valores, que van desde el "0" (el más bajo) hasta la letra "f" (el más alto). Se pueden usar abreviaturas en el código, cuando se repitan caracteres, pasando de un #ffffff a un #fff por ejemplo. Al igual que antes, agregando uno o dos caracteres más, se puede definir la opacidad, donde el "0" da transparencia total, y la "f" una opacidad total.</li>
+          </ul>
+      
+      
+      <h3>CSS Units (Unidades de medidas)</h3>
+        <h4>Definición:</h4>
+          <p>Se suele dividir en dos grandes grupos de unidades:</p>
+          <ul>
+            <li>Unidades Absolutas: Son unidades que "no varian" o no tienen relación directa con otros elementos. Sirve sobre todo para tener un control de las cajas, pero como punto negativo, es malo en temas de "design responsive". Se incluye en este grupo a:</li>
+              <ul>
+                <li>Pixeles (parte más minima de luz del monitor). Se usa normalmente para definir el alto y ancho de imagenes, las tipografias, y los Padding, Border y Margin.</li>
+                <li>Centimentos.</li>
+                <li>Milimetros.</li>
+                <li>Pulgadas.</li>
+              </ul>
+            <li>Unidades Relativas: Son unidades que dependen de otro valor asociado. Son muy usadas para el "design responsive". Tienen una relación directa con el tamaño de la ventana (viewport) o con el elemento contenedor (em) o el elemento raiz (rem) del elemento que se está modificando. Se incluyen:
+              <ul>
+                <li>Porcentajes (%) que estan en relación a la caja contenedora (no se usa para textos)</li>
+                <li>"em": vale el font-size del elemento "padre" o "abuelo" (si el "padre" no esta definido) y lo multiplica por ese valor del "padre" (3em multipica por 3, pasando de 10px a 30 px por ejemplo), sirviendo para dar coherencia a las fuentes. Por eso, se recomienda su uso en tipografias.</li>
+                <li>"rem" hace lo mismo que el "em", pero va a buscar al elemento "raiz" del elemento html.</li>
+                <li>Valores viewport: se usan para medir en relación a la ventana activa, usando el <code>vw</code> para medir el alto y el <code>vh</code> para el alto disponible, este último es muy útil para ventanas modales o para diseños muy responsivos.</li>
+              </ul>
+          </ul>
         
-    <h3>Background (Fondos)</h3>
-      <h4>Propiedades:</h4>
-        <p><code>background-color</code> ==> Le da color al fondo del elemento. Con el último decimal del hexadecimal se le puede dar más o menos transparencia.</p>    
-        <p><code>background-image: url("")</code> ==> La URL enlaza una imagen que puede usarse como fondo de un elemento (o sea, no es una etiqueta "img") y a partir se ahi se le puede dar más propiedades dentro de la "caja" con diferentes "background". </p>    
-        <p><code>background-size</code> ==> Se usan porcentajes por lo general, entonces adapta la imagen al contenedor. Con un <code>100%</code> adapta la imagen para que ocupe todo el ancho del contenedor. Con el valor <code>contain</code> obliga a la imagen a adaptarse y que entré al menos una vez en el contenedor. Por otro lado, el valor <code>cover</code> hace que la imagen se adapte y ajuste a la resolución del contenedor.</p>    
-        <p><code>background-position</code> ==> Se usa para acomodar la imagen en el contenedor de manera más controlada, con los valores top, bottom, right, center y left. Tambien se pueden usar pixeles determinados para posicionar la imagen al contenedor.</p>    
-        <p><code>background-repeat: no-repeat</code> ==> Hace que la imagen no se repita, cambiando el valor por defecto "repeat". A los costados de la imagen, quedaría con el background del elemento.</p>    
-        <p><code>background-attachment: fixed</code> ==> Permite mostrar la imagen con el scroll, creando un efecto de deslizamiento. El que viene por defecto es <code>scroll</code>.</p>
-      <h4>Shorthand de background</h4>
-        <p><code>background</code> ==> El orden para colocar los parametros es: (1) url (imagen), (2) position, (3)size, (4)repeat o no-repeat, (5)attachment y (6)color.</p>
+        
+      <h3>Background (Fondos)</h3>
+        <h4>Propiedades:</h4>
+          <p><code>background-color</code> ==> Le da color al fondo del elemento. Con el último decimal del hexadecimal se le puede dar más o menos transparencia.</p>    
+          <p><code>background-image: url("")</code> ==> La URL enlaza una imagen que puede usarse como fondo de un elemento (o sea, no es una etiqueta "img") y a partir se ahi se le puede dar más propiedades dentro de la "caja" con diferentes "background". </p>    
+          <p><code>background-size</code> ==> Se usan porcentajes por lo general, entonces adapta la imagen al contenedor. Con un <code>100%</code> adapta la imagen para que ocupe todo el ancho del contenedor. Con el valor <code>contain</code> obliga a la imagen a adaptarse y que entré al menos una vez en el contenedor. Por otro lado, el valor <code>cover</code> hace que la imagen se adapte y ajuste a la resolución del contenedor.</p>    
+          <p><code>background-position</code> ==> Se usa para acomodar la imagen en el contenedor de manera más controlada, con los valores top, bottom, right, center y left. Tambien se pueden usar pixeles determinados para posicionar la imagen al contenedor.</p>    
+          <p><code>background-repeat: no-repeat</code> ==> Hace que la imagen no se repita, cambiando el valor por defecto "repeat". A los costados de la imagen, quedaría con el background del elemento.</p>    
+          <p><code>background-attachment: fixed</code> ==> Permite mostrar la imagen con el scroll, creando un efecto de deslizamiento. El que viene por defecto es <code>scroll</code>.</p>
+        
+        <h4>Shorthand de background</h4>
+          <p><code>background</code> ==> El orden para colocar los parametros es: (1) url (imagen), (2) position, (3)size, (4)repeat o no-repeat, (5)attachment y (6)color.</p>
     
     
-    <h3>Gradients (Gradientes)</h3> <!-- RETOMAR DESDE 5:06:17-->
-      <h4>...</h4>
-        <p></p>
+      <h3>Gradients (Gradientes)</h3>
+        <h4>Definiciones</h4>
+          <p>Es un tipo de fondo o transicion de colores, es decir, una variación matematica entre dos colores. Se usan para tener variaciones de tonalidades, por lo general, de una misma gama, tendiendo a lo más oscuro, claro o transparente.</p>
+          <p>Se aplican con la propiedad <code>background</code> o <code>background-color</code>.</p>
+      
+        <h4>Tipos de gradientes</h4>
+          <p>Gradientes lineales: Se inician con la función <code>linear-gradient()</code>. Esta función pide dos parametros: El primer y el segundo color (o una transparencia), separado por coma. Para cambiar la dirección, se debe agregar en el código el comando <code>to left / to right / to top / to bottom)</code>. A su vez, se pueden dar porcentajes de uso de cada uno de los colores, para que la graduación no ocupe todo el contenedor. Por ejemplo, un código sería <code>background: linear-gradient(to right, transparent 30%, green)</code>.</p>
+          <p>Gradientes circulares: Se inician con la función <code>radial-gradient()</code>. Por lo general tiene poco uso. El gradiente se genera hacia el centro del contenedor.</p>
+          <p>Gradiente conico: Se inician con <code>conic-gradient()</code>.</p>
   
 
-  <h2>Capitulo 4: HTML AVANZADO</h2>
-    <h3>...</h3>
-      <h4></h4>
+      <h3>Shadows (Sombras)</h3>
+        <h4>Definiciones</h4>
+          <p>Las sombras son importantes porque agregan realismo, agregan jerarquia visual a algun elemento, mejoran la legibilidad. No hay que confundir la sombra con el borde.</p>
+        
+        <h4>Tipos de sombras</h4>
+          <p><code>box-shadow</code> (Sombra a la caja): Los parametros que se deben escribir son: (1) cantidad de sombra a la derecha (a la izquierda se va con porcentaje negativo),(2) cantidad de sombra hacia abajo (hacia arriba se va con porcentaje negativo), (3) cantidad de desenfoque o difuminado de la sombra, (4) cantidad de expansión de la sombra y (5) color de la sombra. El parametro más usado es el desenfoque y el color (aunque el más usado suele ser el negro, con una opacidad baja).</p>
+          <p><code>text-shadow</code> (Sombra al texto): Se repite los parametros de arriba.</p>
+          <p><code>filter: drop-shadow</code> (Sombra a imagenes PNG): Permite que la sombra inicie en el centro de la imagen, para utilizar el canal Alpha (transparencia) de la imagen, y de este modo, la sombra no inicia desde los bordes, como con <code>box-shadow</code>.</p>
+
+
+    
+    <h2>Capitulo 4: HTML AVANZADO</h2>
+    
+      <h3>Metatags, comments & favicons (Metaetiquetas, comentarios e iconos)</h3>
+        <h4>Definiciones</h4>
+          <ul>
+            <li>Comentarios ==> Es un codigo legible solo para el programador, para señalizar el inicio de una sección o para dejar un mensaje a futuros desarroladores del código.</li>
+            <li>Favicons ==> Es el icono que figura en la pestaña del navegador. Se escribe con la etiqueta <code><link rel=icon href="" type="image/png"></code>. Se recomienda una imagen de 32x32px, o de 64x64px.</li>
+            <li>Metatags ==> Son etiquetas quie tienen la unica finalidad de escribir ciertos aspectos de la página web. No son visibles para el usuario promedio. SOn importantes para el SEO, para la vista previa en redes sociales, etc. Los ejemplos más usuales son:</li>
+            <ul>
+              <li><code>meta charset="UTF-8"</code> ==> Sirve para evitar errores de lectura de caracteres especiales.</li>
+              <li><code>meta name="viewport" content="width=device-width, initial-scale=1.0"</code> ==> El "width=device-width" sirve para que la página escale en todos los dispositivos. El "initial-scale" se encarga del zoom inicial de una página.</li>
+              <li>El atributo "name" refiere a lo que se esta declarando y el atributo "content" refiere al contenido a declarar.</li>
+              <li><code>meta name="description"</code> ==> Se usa para describir la página, y es la leyenda que se previsualiza en los buscadores. Se recomiendan unos 100 caracteres.</li>
+              <li><code>meta name="robots" content=""</code> ==> Se usa para que los motores de búsqueda sepan que hacer cuando encuentran la página. Si se pone "no-follow" no se indexará, si se pone "nosnippet" no se permitirá usar información de la página en vista previa. El "noarchive" prohibe que el buscador guarde la página en el cache, se suele usar para páginas con muchos cambios frecuentes. El "noimageindex" impide indexar imagenes internas. No se recomienda por cuestiones de SEO.</li>
+              <li><code>meta name="OG:..."</code> ==> Las metatags de Open Graph sirven para personalizar las vistas previas de la página en redes sociales. El mejor sitio para previsualizar tarjetas en redes es <a href="https://metatags.io/" target="_blank"> Metatags.io</a>. Se encuentran en este grupo de metatags las siguientes opciones:</li>
+              <ul>
+                <li>"og:title" ==> Le da el titulo principal.</li>
+                <li>"og:image" ==> Brinda una imagen predefinida.</li>
+                <li>"og:description" ==> Da una breve descripción.</li>
+                <li>"og:url" ==> Indica la URL a donde se lo debe redirigir al usuario.</li>
+              </ul>
+            </ul>
+          </ul>
+          
+      
+      <h3>Textarea</h3>
+        <h4>Definiciones</h4>
+          <p>Se parece a un input, pero contiene caracteristicas propias. Permite crear areas de texto más grandes que un input "normal".</p>
+          <p>No se debe contener dentro de un formulario, como con el input.</p>
+          <p>Indicar en CSS el font-family en especifico, porque ya trae el suyo.</p>
+          <p>Propiedades CSS aplicables:</p>
+          <ul>  
+            <li><code>resize</code> ==> permite configurar la posibilidad de permitirle al usuario ampliar (o no) el area de texto. Los valores son: (1) both (por defecto, permite al usuario aumentar el tamaño en pantalla), (2) vertical (permite el desplazamiento vertical unicamente), (3) none (impide la modificación del tamaño).</li>
+            <li><code>min-width / max-width</code> ==> configura el ancho minimo o maximo del textarea.</li>
+            <li><code>min-width / max-heigth</code> ==> configura el alto minimo o maximo del textarea. Se recomienda usar ambos a la vez.</li>
+            <li><code>form-sizing: content</code> ==> El textarea se adapta al contenido y no se precisa JavaScript.</li>
+          </ul>
+          <p>Atributos HTML aplicables:</p>
+          <ul>  
+            <li><code>Maxlength</code> ==> Establece la cantidad maxima de caracteres a escribir.</li>
+            <li><code>Rows</code> ==> Establece la cantidad maxima de lineas a escribir.</li>
+            <li><code>Placeholder</code>==> Muestra un texto de ejemplo para guiar al usuario. Es un atributo visual, no funcional.</li>
+            <li><code>Required</code>==> Obliga al usuario a completar el input con algun dato. Es un atributo de funcionalidad, no visual.</li>
+            <li><code>Readonly</code> ==> Es un atributo que hace que el texarea solamente este disponible para lectura. Tambien se usa en inputs.</li>
+            <li><code>Disabled</code>==> Hace que el input no pueda ser modificado ni seleccionado. Sobre todo, no se enviará la información al servidor. Podría usarse para temrinos y condiciones que deban ser leidas y no enviadas al servidor.</li>
+          </ul>
+
+
+      <h3>Labels </h3>
+        <h4>Definiciones</h4>
+          <p>Es una forma de etiquetar mejor un input, mejorando la accesibilidad. Hace que todo lo contenido en el input, al presionarlo, se posicione el cursor dentro del input.</p>
+          <p>Para eso, se debe poner antes del input el comando <code>label</code>. A continuación, se debe póner el titulo del input, que guiará al usuario.</p>
+
+        <h4>Creando un foco en el input</h4>
+          <p>Para hacer que al tocar el label se posicione adentro del input, la etiqueta <code>label</code> debe rodear a la etiqueta <code>input</code> anidada en</p>
+
+
+      <h3>Select, Datalist & Option</h3>
+        <h4>Definiciones</h4>
+          <p>Son una especie de input, en donde el usuario deberá elegir alguna opción. Los Select y Datalist son dos tipos diferentes, que en su interior contienen Options. Parecido a los "ul" y "ol" con las "li".</p>
+          <p><code>Select</code> ==> Son un tipo de campo de entrada que permite seleccionar una opcion de entre varias opciones. No se le puede personalizar el Padding o Margin, solamente el color de fondo o de texto. Se necesitan frameworks para ello.</p>
+          <p><code>Datalist</code> ==> Son un tipo de campo de entrada con datos precargados, que a la medida que el usuario escribe, se facilita la elección del dato. En el atributo "Value" se debe indicar la opción a elegir. Si se quiere poner una descripción al elemento de lista, se lo puede poner entre los simbolos de cierre del datalist.</p>
+        
+          <h4>Parametros comunes</h4>
+          <p>Ambos usan Option para poder elegir los datos. Se usan "name" e "id" para especificar el uso. El atributo "value" en los Options va a facilitar la carga de datos en el servidor, evitando acentos o caracteres especiales.</p>
+          <p>Ejemplo de Select:</p>
+            <select name="test-de-select" id="">
+              <option value="option1">Opción 1</option>
+              <option value="option2">Opción 2</option>
+              <option value="option3">Opción 3</option>
+              <option value="option4">Opción 4</option>
+            </select>
+            <br>
+
+            <label>Ejemplo de Datalist
+              <input list="example" name="example">
+              <datalist name="test-de-datalist" id="example">
+              <option value="Banana">Ecuador</option>
+              <option value="Anana">Brasil</option>
+              <option value="Manzana">Argentina</option>
+              <option value="Pera">Colombia</option>
+              <option value="Naranja">Chile</option>
+              <option value="Mandarina">Bolivia</option>
+            </datalist>
+          </label>
+
+      
+      <h3>Fieldset & Legend</h3> <!-- Continuar desde 6:33:00 -->
+        <h4>Definiciones</h4>
+          <p>S</p>
+      
+      
+      <h3>Details & Summary</h3>
+        <h4>Definiciones</h4>
+          <p>S</p>
+
+
+    <h2>Capitulo 5: CSS INTERMEDIO</h2>
+      <h3>...</h3>
+        <h4></h4>
         <p></p>
         <p></p>
         <p></p>
         <p><code></code></p>
-    <ul>
-      <li></li>
-      <li></li>
-    </ul>
-    <h3>...</h3>
-    <h4></h4>
-    <p></p>
-    <p></p>
-    <p></p>
-
-
-
-    <h2>Capitulo 5: CSS INTERMEDIO</h2>
-    <h3>...</h3>
-    <h4></h4>
-    <p></p>
-    <p></p>
-    <p></p>
-    <ul>
-      <li></li>
-      <li></li>
-    </ul>
-    <h3>...</h3>
-    <h4></h4>
-    <p></p>
-    <p></p>
-    <p></p>
     
 
     
@@ -428,3 +528,6 @@
     <p></p>
     <p></p>
     <p></p>
+    </main>
+  </body>
+</html>
